@@ -1,0 +1,158 @@
+/*******************************************************
+/* Site Colors
+/********************************************************
+#523249
+#322B25
+#FFFFFF
+#F4F4F4
+#DBEBC0
+*/
+
+/*******************************************************
+/* Global Styles
+/********************************************************/
+
+/* Universal selector - clear browser defaults */
+* {
+    /* set box sizing to border-box */
+    /* clear margin and padding */
+}
+
+/* Body Styles */
+body {
+
+    /* Set font properties (size, color, family) */
+    /* Create some spacing between each line of page */
+
+}
+
+/* Container is a div in each section, which wraps content to center */
+.container {
+    /* Set the max width as percentage and center with margin */
+   
+   /* This hides scrollbars if content is too big for container and also clears floats (for branding and nav) */
+    overflow: hidden;
+}
+
+/* All the anchor tags on the page */
+a {
+    /* Remove underlining and set text color */
+}
+
+/* All the anchor tags in hover state */
+a:hover {
+    /* Set the text color */
+}
+
+/* Base button style for both the dark and light buttons */
+button {
+}
+
+/* Dark button (adds on to styles of button) */
+.btn-dark {
+}
+
+/* Light button (adds on to styles of button) */
+.btn-light {
+}
+
+/*******************************************************
+/* Header - contains brand and nav bar
+/********************************************************/
+
+/* Header section */
+header {
+    /* Set background, height, padding and border */
+}
+
+/* Galactic Coffee logo */
+header .brand {
+    /* Position by floating left */
+}
+
+/* Main navigation */
+header nav {
+    /* Position by floating right (no need to clear float, container is overflow:hidden which takes care of this) */
+}
+
+/* Navigation item */
+header li {
+    /* Set display to inline-block (no need to float if we do this) */
+    /* Create space between each item by setting padding */
+}
+
+/* Selector targets the first word of the brand "Galactic" */
+header .brand em {
+    /* Set the text color */
+}
+
+/* Banner - contains tagline for site with background image */
+#banner {
+    /* Set the minimum height */
+    /* Center text */
+    /* Place the appropriate background image - should start on right top and cover the area */
+}
+
+/* The first sentence in the banner */
+#banner h2 {
+    /* Set to a large font size and set margins for positioning properly */
+}
+
+/* The remainder of the text in banner */
+#banner p {
+    /* Set font size and position property with margins */
+}
+
+/*******************************************************
+/* Subscription section - subscribe to daily menu
+/********************************************************/
+
+ /* Main section for subscription */
+#subscription {
+    /* Set padding and background */
+}
+
+/* Text for subcription section */
+#subscription h2 {
+    /* Float left and set the margin */
+}
+
+/* Subscription form */
+#subscription form {
+    /* Float right. No need to clear the float b/c of overflow:hidden on container */
+}
+
+/* Input field in subscription form */
+#subscription input[type="email"] {
+    /* Set display to inline-block, height, width, padding */
+}
+
+/*******************************************************
+/* Amenities
+/********************************************************/
+
+/* Amenities section */
+#amenities {
+    /* Set margin */
+    /* Set text color and align center */
+}
+
+/* Feature box within the amenities (there are 3 in total) */
+#amenities .feature {
+    /* Float each feature left ... no need to clear b/c of the container */
+    /* Set each width as percentage */
+    /* Set padding within each feature */
+}
+
+/* Feature image */
+#amenities .feature img {
+    /* Set width to 100% of parent element */
+    /* Set border radius to round corners of image */
+}
+
+/*******************************************************
+/* Footer
+/********************************************************/
+footer {
+    /* Set margin, background color, padding and align text to the center */
+}
