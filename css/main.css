@@ -15,20 +15,28 @@
 /* Universal selector - clear browser defaults */
 * {
     /* set box sizing to border-box */
+    box-sizing: border-box;
     /* clear margin and padding */
+    margin: 0;
+    padding: 0;
 }
 
 /* Body Styles */
 body {
-
     /* Set font properties (size, color, family) */
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
     /* Create some spacing between each line of page */
-
+    line-height: 1.5;
+    
 }
 
 /* Container is a div in each section, which wraps content to center */
 .container {
     /* Set the max width as percentage and center with margin */
+   max-width: 100%;
+   margin: auto;
    
    /* This hides scrollbars if content is too big for container and also clears floats (for branding and nav) */
     overflow: hidden;
@@ -37,23 +45,38 @@ body {
 /* All the anchor tags on the page */
 a {
     /* Remove underlining and set text color */
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* All the anchor tags in hover state */
 a:hover {
     /* Set the text color */
+    color: #DBEBC0;
 }
 
 /* Base button style for both the dark and light buttons */
 button {
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px;
+
+    font-weight: bold;
 }
 
 /* Dark button (adds on to styles of button) */
 .btn-dark {
+    background-color: #523249;
+    color: #FFFFFF;
 }
 
 /* Light button (adds on to styles of button) */
 .btn-light {
+    background-color: #DBEBC0;
+    color: #322B25;
+    margin-right: 60px;
 }
 
 /*******************************************************
@@ -63,44 +86,81 @@ button {
 /* Header section */
 header {
     /* Set background, height, padding and border */
+    background-color: #322b25;
+    height: 80px;
+    padding: 0px 75px;
+    border-bottom: 3px solid #DBEBC0;
 }
 
 /* Galactic Coffee logo */
 header .brand {
     /* Position by floating left */
+    float: left;
+
+    padding: 10px;
+    margin-left: 50px;
+    margin: 10px;
 }
 
 /* Main navigation */
 header nav {
     /* Position by floating right (no need to clear float, container is overflow:hidden which takes care of this) */
-}
+    float: right;
+
+    margin-right: 50px;
+    margin: 10px;
+    
+} 
 
 /* Navigation item */
 header li {
     /* Set display to inline-block (no need to float if we do this) */
+    display: inline-block;
     /* Create space between each item by setting padding */
+    padding: 20px;
 }
 
 /* Selector targets the first word of the brand "Galactic" */
 header .brand em {
     /* Set the text color */
+    color: #DBEBC0;
+
+    font-style: normal;
+ 
+
 }
 
 /* Banner - contains tagline for site with background image */
 #banner {
+
     /* Set the minimum height */
+    height: 300px;
+
     /* Center text */
+    text-align: center;
     /* Place the appropriate background image - should start on right top and cover the area */
+    background-image: url('../images/coffee-beans.jpg');
+    background-color: #DBEBC0;
+    background-position: top right;
+    background-size: cover;
+
+
 }
 
 /* The first sentence in the banner */
 #banner h2 {
     /* Set to a large font size and set margins for positioning properly */
+    font-size: 45px;
+    margin: 45px 0px 0px 0px;
+
+    color: #ffffff;
 }
 
 /* The remainder of the text in banner */
 #banner p {
     /* Set font size and position property with margins */
+    font-size: 17px;
+    margin: 0px 80px 30px 80px;
 }
 
 /*******************************************************
@@ -110,21 +170,30 @@ header .brand em {
  /* Main section for subscription */
 #subscription {
     /* Set padding and background */
+    padding: 20px;
+    background-color: #322b25;
 }
 
 /* Text for subcription section */
 #subscription h2 {
     /* Float left and set the margin */
+    float: left;
+    margin-left: 60px;
 }
 
 /* Subscription form */
 #subscription form {
     /* Float right. No need to clear the float b/c of overflow:hidden on container */
+    float: right;
 }
 
 /* Input field in subscription form */
 #subscription input[type="email"] {
     /* Set display to inline-block, height, width, padding */
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
 }
 
 /*******************************************************
@@ -134,25 +203,43 @@ header .brand em {
 /* Amenities section */
 #amenities {
     /* Set margin */
+    margin: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+
     /* Set text color and align center */
+    color: #322B25;
+    text-align: center;
+
 }
 
 /* Feature box within the amenities (there are 3 in total) */
 #amenities .feature {
     /* Float each feature left ... no need to clear b/c of the container */
+    float: left;
     /* Set each width as percentage */
+    width: 33%;
     /* Set padding within each feature */
+    padding: 10px;
+
 }
 
 /* Feature image */
 #amenities .feature img {
     /* Set width to 100% of parent element */
+    width: 100%;
     /* Set border radius to round corners of image */
+    border-radius: 5px;
 }
 
 /*******************************************************
 /* Footer
 /********************************************************/
 footer {
-    /* Set margin, background color, padding and align text to the center */
+    /* Set margin, background color, padding and align text to the center*/
+    margin: 10px 0px;
+    background-color: #523249;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
 }
